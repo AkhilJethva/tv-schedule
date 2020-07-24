@@ -9,7 +9,7 @@ class ShowDetails extends Component{
     static async getInitialProps(props){
         try{
             const showid = props.query.showid; 
-            const res = await axios.get(`http://api.tvmaze.com/shows/${showid}?embed=cast`);
+            const res = await axios.get(`https://api.tvmaze.com/shows/${showid}?embed=cast`);
             console.log(res.data);
             return { show: res.data};
         }catch(err){
