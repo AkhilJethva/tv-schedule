@@ -1,0 +1,11 @@
+.thumbnail{
+    &_image{
+        width: 100%;
+    }
+
+    &_caption{
+        text-align: center;
+        padding: 10px;
+        background-image: url('../../images/blog-2.jpg');
+    }
+}
